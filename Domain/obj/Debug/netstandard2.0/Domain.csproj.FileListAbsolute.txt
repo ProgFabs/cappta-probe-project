@@ -1,0 +1,9 @@
+C:\temp\Cappta\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\temp\Cappta\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\temp\Cappta\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\temp\Cappta\Domain\obj\Debug\netstandard2.0\Domain.pdb

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "GpgT5ld4I+CVojlZPlKwv6VeH1bz99lhlv35LPca06p7PsFMW2HmjGsUtHr56qr/kRQsK7CEWE4tbJUxI2wBUg==",
+  "success": true,
+  "projectFilePath": "C:\\temp\\Cappta\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\earth\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
