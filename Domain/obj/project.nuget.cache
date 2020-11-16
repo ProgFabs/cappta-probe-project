@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UwNpxz9PsTOmwNOBgDAFeYHtu9Y4P+gHYmjVP2bwkx+GSnPkrdZBGzDkmfb0gYKRLrHUXb0aICrYcXzJnSbNGA==",
+  "dgSpecHash": "smQsspFMXpoyxjuN7qhyw4JnDAXwF/9ylZvQ83RBLW/N3/MzcL2uIfFMN1zMQH16U90Df7fsJpJeJe+USiZbnQ==",
   "success": true,
   "projectFilePath": "C:\\temp\\Cappta\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\earth\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\earth\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\earth\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\earth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }

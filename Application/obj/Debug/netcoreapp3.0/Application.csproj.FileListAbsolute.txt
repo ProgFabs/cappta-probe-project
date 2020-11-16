@@ -1,0 +1,12 @@
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.csprojAssemblyReference.cache
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfoInputs.cache
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfo.cs
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.csproj.CoreCompileInputs.cache
+C:\temp\Cappta\Application\bin\Debug\netcoreapp3.0\Application.deps.json
+C:\temp\Cappta\Application\bin\Debug\netcoreapp3.0\Application.dll
+C:\temp\Cappta\Application\bin\Debug\netcoreapp3.0\Application.pdb
+C:\temp\Cappta\Application\bin\Debug\netcoreapp3.0\Domain.dll
+C:\temp\Cappta\Application\bin\Debug\netcoreapp3.0\Domain.pdb
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.csproj.CopyComplete
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.dll
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.0\Application.pdb

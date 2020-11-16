@@ -1,40 +1,26 @@
-using System.Security.AccessControl;
+using System.Collections.Generic;
 using Domain;
 
 namespace Application.Probes
 {
   public class Launch
   {
-    public ProbeDTO Probe { get; set; }
+    public List<ProbeLaunchDTO> Probes { get; set; }
 
-    public Launch(ProbeDTO probe) {
-      Probe = probe;
+    public Launch(List<ProbeLaunchDTO> probes) {
+      Probes = probes;
     }
-    
-    
-    public string ProbeLaunch() 
+     
+    public List<string> ProbeLaunch() 
     {
-      Highland highland = new Highland(5, 5);
-      Probe newProbe = new Probe(Probe.Position_X, Probe.Position_Y, Probe.FacingDirection, highland);
-
-      // char[] moves = new char[] { 'L', 'M', 'L', 'M', 'L', 'M', 'L', 'M', 'M' };
-
-      if (Probe.Moves != null)
+      List<string> probeLastPosition = new List<string>();
+      foreach (ProbeLaunchDTO probe in Probes) 
       {
-        char[] moves = new char[Probe.Moves.Length];
-        int counter = 0;
-
-        foreach (char c in Probe.Moves)
-        {
-          moves[counter] = c;
-          counter++;
-        }
-
-        newProbe.Move(moves);
-        return newProbe.LastPosition();
+        probe.Move(probe.Moves);
+        probeLastPosition.Add(probe.LastPosition());
       }
 
-      return "Error";
+      return probeLastPosition;
     }
   }
 }

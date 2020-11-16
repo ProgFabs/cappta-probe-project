@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using MediatR;
-using Microsoft.Extensions.Logging;
-using Application;
-using Application.Probes;
 using Domain;
-using Newtonsoft.Json;
+using Application.Probes;
 using Newtonsoft.Json.Linq;
 
 namespace API.Controllers
@@ -18,51 +11,32 @@ namespace API.Controllers
     public class ProbeController : ControllerBase
     {
 
-    [HttpGet]
-        public string Get()
-        {
-            Highland highland = new Highland(5, 5);
-            Probe probe = new Probe(1, 2, 'N', highland);
-
-            char[] moves = new char[] { 'L', 'M', 'L', 'M', 'L', 'M', 'L', 'M', 'M' };
-            probe.Move(moves);
-
-            return probe.LastPosition();
-        }
-
-    // [HttpPost]
-    //     public string Post([FromBody] ProbeDTO probe) 
-    //     {
-    //         var launch = new Launch(probe);
-
-    //         return launch.ProbeLaunch();
-    //     }
         [HttpPost]
-        public List<ProbeList> Post([FromBody] JObject probes) 
+        public List<string> Post([FromBody] JObject probeLaunchDTO) 
         {
-                var jo = JObject.Parse(probes.ToString());
-                var probe = jo["probe"].ToObject<ProbeList[]>();
+            var probeLaunchJson = JObject.Parse(probeLaunchDTO.ToString());
 
-                List<ProbeList> probeList = new List<ProbeList>();
-                foreach (var p in probe)
-                {
-                    probeList.Add(p);
-                }
-                return probeList;
+            var highlander = probeLaunchJson["highland"].ToString().Split(' ');
+            var probe = probeLaunchJson["probe"].ToObject<List<ProbeLaunchDTO>>();
 
+            Highland highland = new Highland(int.Parse(highlander[0]), int.Parse(highlander[1]));
 
+            List<ProbeLaunchDTO> probeList = new List<ProbeLaunchDTO>();
+            foreach (var p in probe)
+            {
+                ProbeLaunchDTO pp = new ProbeLaunchDTO(
+                    p.Position_X,
+                    p.Position_Y,
+                    p.FacingDirection,
+                    highland,
+                    p.Moves
+                );
 
+                probeList.Add(pp);
+            }
 
-
-
-            // List<ProbeList> list = new List<ProbeList>();
-
-            // foreach (var element in probes)
-            // {
-            //     ProbeList datalist = JsonConvert.DeserializeObject<ProbeList>(probes.ToString());
-            //     list.Add(datalist);
-            // }
-            // return list;
+            var launch = new Launch(probeList);
+            return launch.ProbeLaunch();
         }
     }
 }

@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BkkTzInZB+Ve3rmzvv6jvoS37Rw0gTtJSbzGTB3INdKSSLf4oRMIHjKUdJccojwARIopAxRKl0VCCBP/O9c/wQ==",
+  "dgSpecHash": "2EtqCaU/lo2YKJrcNZEUJ79xdQVkBcRpAN7EOWf9yv5Ay8jAKXFJXv+HdwdpzO/7mECsEULdQHWIrreHXujVwA==",
   "success": true,
   "projectFilePath": "C:\\temp\\Cappta\\API\\API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\earth\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\earth\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\earth\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.10\\microsoft.aspnetcore.jsonpatch.3.1.10.nupkg.sha512",
     "C:\\Users\\earth\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.10\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.10.nupkg.sha512",
     "C:\\Users\\earth\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\earth\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\earth\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\earth\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],

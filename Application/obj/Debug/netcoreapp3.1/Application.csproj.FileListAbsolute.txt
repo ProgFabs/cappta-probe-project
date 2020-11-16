@@ -1,0 +1,4 @@
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\temp\Cappta\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache

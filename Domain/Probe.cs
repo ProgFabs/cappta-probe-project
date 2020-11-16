@@ -16,7 +16,7 @@ namespace Domain
       Highland = highland;
     }
 
-    public void Move(char[] moves)
+    public void Move(string moves)
     {
       for (int i = 0; i < moves.Length; i++)
       {
@@ -76,24 +76,16 @@ namespace Domain
 
         if (move == 'M' && FacingDirection == 'W')
         {
-          if (Position_X == 0)
+          if (Position_X != 0)
           {
-            
-          }
-          else
-          {
-            Position_X -= 1;
+            Position_X -= 1;   
           }
           continue;
         }
 
         if (move == 'M' && FacingDirection == 'E')
         {
-          if (Highland.Boundary_X == Position_X)
-          {
-            
-          }
-          else
+          if (Highland.Boundary_X != Position_X)
           {
             Position_X += 1;
           }
@@ -103,11 +95,7 @@ namespace Domain
 
         if (move == 'M' && FacingDirection == 'N')
         {
-          if (Highland.Boundary_Y == Position_Y)
-          {
-            
-          }
-          else
+          if (Highland.Boundary_Y != Position_Y)
           {
             Position_Y += 1;
           }
@@ -117,16 +105,11 @@ namespace Domain
 
         if (move == 'M' && FacingDirection == 'S')
         {
-          if (Position_Y == 0)
-          {
-            
-          }
-          else
+          if (Position_Y != 0)
           {
             Position_Y -= 1;
           }
         }
-
       }
 
     }
