@@ -14,11 +14,6 @@ export const Screen = () => {
   const [probeLaunching, setProbeLaunching] = useState(false);
   const [response, setResponse] = useState([]);
 
-  const handleProbeAmountChange = (event: FormEvent<HTMLInputElement>) => {
-    const { value } = event.currentTarget;
-    setProbeAmount(Number(value));
-  }
-
   useEffect(() => {
     if(iteration === probeAmount && probes.length >= 1) {
       setProbeLaunching(true);
@@ -28,15 +23,18 @@ export const Screen = () => {
     }
   }, [probeAmount, iteration, highland, probes])
 
+  const handleProbeAmountChange = (event: FormEvent<HTMLInputElement>) => {
+    const { value } = event.currentTarget;
+    setProbeAmount(Number(value));
+  }
+
   const handleProbePropsChange = (event: FormEvent<HTMLInputElement>) => {
     const { value } = event.currentTarget;
-
     setProbeProps(value);
   }
 
   const handleProbeMovesChange = (event: FormEvent<HTMLInputElement>) => {
     const { value } = event.currentTarget;
-
     setMoves(value);
   }
 
@@ -47,10 +45,9 @@ export const Screen = () => {
     const probe: IProbe = {
       Position_X: Number(newProbeProps[0]),
       Position_Y: Number(newProbeProps[1]),
-      FacingDirection: newProbeProps[2],
-      Moves: moves,
+      FacingDirection: newProbeProps[2].toUpperCase(),
+      Moves: moves.toUpperCase(),
     }
-    
 
     setSubmitting(true);
     setProbes([...probes, probe]);
@@ -58,6 +55,11 @@ export const Screen = () => {
     setProbeProps("");  
     setTimeout(() => setSubmitting(false), 1000)
   }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') 
+    handleSubmit();
+  } 
 
   const renderProbeDataInput = () => {
     while(iteration !== probeAmount) {
@@ -74,13 +76,13 @@ export const Screen = () => {
             />
             </Command>
             <span>
-              Enter probe #{iteration + 1} movements:
+              Enter probe #{iteration + 1} movements then press Enter:
             </span>
             <Command>
             <Input 
             type="text"
             onChange={handleProbeMovesChange}
-            onDoubleClick={() => handleSubmit()}
+            onKeyPress={(e) => handleKeyPress(e)}
             />
             </Command>
           </Log>
@@ -107,10 +109,8 @@ export const Screen = () => {
               Starting the development server <br />
               Compiled successfully! <br />
               Welcome to ProbeLauncher by Cappta©  <br /> <br />
-              How many probes will you send to Mars? <br />
+              How many probes will you send to Mars? 
             </span>
-          </Log>
-          <Log>
           </Log>
           <Command>
             <Input 
