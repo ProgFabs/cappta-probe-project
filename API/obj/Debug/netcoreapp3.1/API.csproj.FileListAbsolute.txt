@@ -1,6 +1,5 @@
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\appsettings.json
-C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\API.exe
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\API.deps.json
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\API.runtimeconfig.json
@@ -27,3 +26,4 @@ C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\temp\Cappta\API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\temp\Cappta\api\obj\Debug\netcoreapp3.1\scopedcss\bundle\API.styles.css

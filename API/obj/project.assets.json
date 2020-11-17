@@ -262,11 +262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\Cappta\\API\\API.csproj",
+      "projectUniqueName": "C:\\temp\\Cappta\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\temp\\Cappta\\API\\API.csproj",
+      "projectPath": "C:\\temp\\Cappta\\api\\API.csproj",
       "packagesPath": "C:\\Users\\earth\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\Cappta\\API\\obj\\",
+      "outputPath": "C:\\temp\\Cappta\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\earth\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -281,6 +281,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\temp\\Cappta\\Application\\Application.csproj": {
               "projectPath": "C:\\temp\\Cappta\\Application\\Application.csproj"
@@ -296,6 +297,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
@@ -320,7 +322,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

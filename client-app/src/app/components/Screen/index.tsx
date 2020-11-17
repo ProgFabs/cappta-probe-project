@@ -94,7 +94,7 @@ export const Screen = () => {
     <MainContainer>
       <Window>
         <Terminal>
-          <Command>git clone https://github.com/ProgFabs/cappta-probe-project</Command>
+          <Command>git clone https://github.com/ProgFabs/cappta-probe-project.git</Command>
           <Log>
             <span>
               Cloning into 'cappta-probe-project'...<br />
