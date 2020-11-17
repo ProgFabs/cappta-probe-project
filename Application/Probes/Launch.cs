@@ -5,7 +5,7 @@ namespace Application.Probes
 {
   public class Launch
   {
-    public List<ProbeLaunchDTO> Probes { get; set; }
+    private List<ProbeLaunchDTO> Probes { get; set; }
 
     public Launch(List<ProbeLaunchDTO> probes) {
       Probes = probes;

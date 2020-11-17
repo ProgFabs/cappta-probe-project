@@ -2,14 +2,11 @@ namespace Domain
 {
   public class ProbeLaunchDTO : Probe
   {
-    public string Moves { get; set; }
+    public string Moves { get; private set; }
 
-    public ProbeLaunchDTO(int position_X, int position_Y, char facingDirection, Highland highland, string moves) : base() 
+    public ProbeLaunchDTO(int position_X, int position_Y, char facingDirection, Highland highland, string moves) 
+      : base(position_X, position_Y, facingDirection, highland)
     {
-      Position_X = position_X;
-      Position_Y = position_Y;
-      FacingDirection = facingDirection;
-      Highland = highland;
       Moves = moves;
     }
   }

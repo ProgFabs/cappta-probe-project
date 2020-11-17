@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\Cappta\\API\\API.csproj": {}
+    "C:\\temp\\Cappta\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\temp\\Cappta\\API\\API.csproj": {
+    "C:\\temp\\Cappta\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\Cappta\\API\\API.csproj",
+        "projectUniqueName": "C:\\temp\\Cappta\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\temp\\Cappta\\API\\API.csproj",
+        "projectPath": "C:\\temp\\Cappta\\api\\API.csproj",
         "packagesPath": "C:\\Users\\earth\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\Cappta\\API\\obj\\",
+        "outputPath": "C:\\temp\\Cappta\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\earth\\AppData\\Roaming\\NuGet\\NuGet.Config",

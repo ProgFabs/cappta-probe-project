@@ -2,12 +2,11 @@ namespace Domain
 {
     public class Probe
     {
-        public int Position_X { get; set; }
-        public int Position_Y { get; set; }
-        public char FacingDirection { get; set; }
-        public Highland Highland { get; set; }
+        public int Position_X { get; protected set; }
+        public int Position_Y { get; protected set; }
+        public char FacingDirection { get; protected set; }
+        public Highland Highland { get; protected set; }
 
-    public Probe() {}
     public Probe(int position_X, int position_Y, char facingDirection, Highland highland)
     {
       Position_X = position_X;

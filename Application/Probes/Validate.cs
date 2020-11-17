@@ -7,7 +7,7 @@ namespace Application.Probes
 {
     public class Validate
     {
-        public JObject Json { get; set; }
+        private JObject Json { get; set; }
 
         public Validate(JObject json) {
             Json = json;
